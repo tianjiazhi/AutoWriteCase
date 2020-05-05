@@ -31,22 +31,26 @@ class RunMain:
             if interface_name and uri and method:
                 # 获取公共信息保存到字典
                 com_dict = {'interface_name': None, 'uri': None, 'method': None,
-                            'valid_body': None, 'output_style': None, 'is_run': None}
+                            'output_style': None, 'valid_body': None, 'is_run': None}
 
                 com_dict['interface_name'] = interface_name
                 com_dict['uri'] = uri
                 com_dict['method'] = method
-                com_dict['valid_body'] = self.get_data.get_valid_body(row_num)
                 com_dict['output_style'] = self.get_data.get_output_style(row_num)
+
+                com_dict['valid_body'] = self.get_data.get_valid_body(row_num)
                 com_dict['is_run'] = self.get_data.get_is_run(row_num)
             else:
                 # 获取每个字段的信息保存到字典中
-                param_dict = {'is_run': None,'param_name': None, 'param_type': None,
-                              'json_path_expression': None,'min_bound': None, 'max_bound': None,
+                param_dict = {'valid_body': None,'is_run': None,'param_name': None,
+                              'param_type': None,'json_path_expression': None,
+                              'min_bound': None, 'max_bound': None,
                               'is_required': None, 'option_value': None,
                               'is_array': None, 'format_check': None}
 
+                param_dict['valid_body'] = self.get_data.get_valid_body(row_num)
                 param_dict['is_run'] = self.get_data.get_is_run(row_num)
+
                 param_dict['param_name'] = self.get_data.get_param_name(row_num)
                 param_dict['param_type'] = self.get_data.get_param_type(row_num)
                 param_dict['json_path_expr'] = self.get_data.get_json_path_expr(row_num)
