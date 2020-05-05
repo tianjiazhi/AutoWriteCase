@@ -15,11 +15,16 @@ class AutoGenerateCasesLogic:
         self.interface_name = com_dict.get('interface_name')
         self.uri = com_dict.get('uri')
         self.method = com_dict.get('method')
-        self.valid_body = com_dict.get('valid_body')
         self.output_style = com_dict.get('output_style')
+
+
+        self.valid_body = com_dict.get('valid_body')
         self.all_is_run = com_dict.get('is_run')
         ############################################################
+        self.a_valid_body = com_dict.get('valid_body')
         self.a_is_run = param_dict.get('is_run')
+
+
         self.param_name = param_dict.get('param_name')
         self.param_type = param_dict.get('param_type')
         self.json_path_expr = param_dict.get('json_path_expr')
