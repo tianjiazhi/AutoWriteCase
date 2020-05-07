@@ -60,12 +60,12 @@ class GetData:
         """获取case是否运行"""
         y = self._get_column_num.IsRun
         is_run = self._operation_excel.get_cell_value(x, y)
-        if is_run:
-            if is_run.upper() == "YES":
-                flag = True
-            else:
-                flag = False
-            return flag
+        if is_run and is_run.upper() == "YES":
+            flag = True
+        else:
+            flag = False
+        return flag
+
 
 
 
@@ -111,12 +111,11 @@ class GetData:
         """获取参数是否为必填字段"""
         y = self._get_column_num.IsRequired
         is_required = self._operation_excel.get_cell_value(x, y)
-        if is_required:
-            if is_required.upper() == "YES":
-                flag = True
-            else:
-                flag = False
-            return flag
+        if is_required and is_required.upper() == "YES":
+            flag = True
+        else:
+            flag = False
+        return flag
 
 
     def get_option_value(self, x:int):
@@ -130,12 +129,11 @@ class GetData:
         """获取选项值是否为数组"""
         y = self._get_column_num.IsArray
         is_array = self._operation_excel.get_cell_value(x, y)
-        if is_array:
-            if is_array.upper() == "YES":
-                flag = True
-            else:
-                flag = False
-            return flag
+        if is_array and is_array.upper() == "YES":
+            flag = True
+        else:
+            flag = False
+        return flag
 
 
 
