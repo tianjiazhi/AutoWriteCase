@@ -46,9 +46,9 @@ class GetData:
         y = self._get_column_num.isFeature
         is_feature = self._operation_excel.get_cell_value(x, y)
         if is_feature and is_feature.upper() == "YES":
-            flag = True
+            flag = 'true'
         else:
-            flag = False
+            flag = 'false'
         return flag
 
     #####################################################################

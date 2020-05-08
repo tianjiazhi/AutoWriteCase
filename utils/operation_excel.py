@@ -40,12 +40,10 @@ class WriteExcel:
         self.wb.save(self.file_name)
 
 
-    def write_value_to_cell(self, row, colunm, cellvalue,color="AACF91"):
+    def write_value_to_cell(self, row, colunm, cellvalue):
         """向单元格中写入数据"""
         cell = self.ws.cell(row=row, column=colunm)
         try:
-            pattern_fill = PatternFill(start_color=color, end_color=color, fill_type="solid")
-            cell.fill = pattern_fill
             cell.value = cellvalue
         except:
             red_fill = PatternFill(start_color=colors.RED, end_color=colors.RED, fill_type="solid")

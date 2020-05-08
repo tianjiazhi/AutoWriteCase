@@ -21,8 +21,8 @@ class RunMain:
     def run_main(self):
         sheet_lines = self.get_data.get_sheet_lines()
         com_dict = {}
-        # 写测试用例标题行
 
+        # 写测试用例标题行
         self.write_to_cell.write_title('层级关系','特性名称','特性编号','是否为特性',
                                        '用例名称','用例编号','测试阶段','用例级别',
                                        '预置条件','测试步骤','预期结果','用例说明',
