@@ -10,6 +10,7 @@ import shutil
 import time
 from data.auto_generate_case_logic import AutoGenerateCasesLogic
 from data.get_data_from_excel import GetData
+from data.write_case_logic import WriteCaseLogic
 from data.write_data_to_excel import WriteCaseToExcel
 
 class RunMain:
@@ -27,6 +28,7 @@ class RunMain:
                                        '用例名称','用例编号','测试阶段','用例级别',
                                        '预置条件','测试步骤','预期结果','用例说明',
                                        '用例标签','用例活动名','测试类型')
+
         self.write_to_cell.write_title('Depth','Feature_Name','Feature_Number','isFeature',
                                        'Testcase_Name','Testcase_Number','Testcase_Stage',
                                        'Testcase_Level','Testcase_PrepareCondition',
@@ -56,7 +58,7 @@ class RunMain:
                     com_dict['uri'] = uri
                     com_dict['method'] = method
                     com_dict['output_style'] = self.get_data.get_output_style(row_num)
-
+                    # 此处读取文件json
                     com_dict['valid_body'] = self.get_data.get_valid_body(row_num)
                     com_dict['is_run'] = self.get_data.get_is_run(row_num)
                 else:
@@ -66,7 +68,7 @@ class RunMain:
                                   'min_bound': None, 'max_bound': None,
                                   'is_required': None, 'option_value': None,
                                   'is_array': None, 'format_check': None}
-
+                    # 此处读取文件json
                     param_dict['valid_body'] = self.get_data.get_valid_body(row_num)
                     param_dict['is_run'] = self.get_data.get_is_run(row_num)
 
@@ -83,10 +85,13 @@ class RunMain:
 
                     # agt = AutoGenerateCasesLogic(com_dict,param_dict,self.write_to_cell)
                     # agt.auto_write_test_case()
+                    wcl = WriteCaseLogic(com_dict,param_dict,self.write_to_cell)
+
 
         # 将运行结果进行备份到指定目录下
         backup_full_path = 'D:/BackupCase/Case_{0}.xlsx'.format(time.strftime('%Y%m%d_%H%M%S', time.localtime(time.time())))
         shutil.copy(self.write_file_name,backup_full_path)
+
 
 if __name__ == "__main__":
     m = RunMain('./excel_file/interface_analysis_document.xlsx','./excel_file/case.xlsx')
