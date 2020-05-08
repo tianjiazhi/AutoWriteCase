@@ -29,11 +29,31 @@ class ReadExcelColConfig:
 
 
 class WriteExcelColConfig:
-    CaseName = 1                 # 用例名称
-    CaseId = 2                   # 用例编号
-    Precondition = 3             # 前置条件
-    TestStep = 4                 # 测试步骤
-    Expectation = 5              # 期望结果
-    TestData = 6                 # 测试数据
-    Level = 7                    # 优先级
-    Tag = 8                      # 标签
+    # CaseName = 1                 # 用例名称
+    # CaseId = 2                   # 用例编号
+    # Precondition = 3             # 前置条件
+    # TestStep = 4                 # 测试步骤
+    # Expectation = 5              # 期望结果
+    # TestData = 6                 # 测试数据
+    # Level = 7                    # 优先级
+    # Tag = 8                      # 标签
+
+    Depth = 1                           # 层级关系
+    Feature_Name = 2                    # 特性名称
+    Feature_Number = 3                  # 特性编号
+    isFeature = 4                       # 是否为特性
+
+    Testcase_Name = 5                   # 用例名称
+    Testcase_Number = 6                 # 用例编号
+    Testcase_Stage = 7                  # 测试阶段
+    Testcase_Level = 8                  # 用例级别
+    Testcase_PrepareCondition = 9       # 预置条件
+    Testcase_TestSteps = 10             # 测试步骤
+    Testcase_Excepted = 11              # 预期结果
+    Testcase_Remark = 12                # 用例说明
+    Testcase_Tags = 13                  # 用例标签
+    Testcase_Activity = 14              # 用例活动名
+    Testcase_TestType = 15              # 测试类型
+
+
+

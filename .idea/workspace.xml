@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b71860-684d-49ab-84de-29f3a8feea8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AutoWriteCase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/excel_col_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/excel_col_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/get_data_from_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/get_data_from_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/write_data_to_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/write_data_to_excel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +24,18 @@
     <session id="265602522">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="py" value="12" />
+          <entry key="py" value="16" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -35,50 +43,110 @@
         <counts>
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="12" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
           <entry key="json" value="56" />
-          <entry key="py" value="475" />
-          <entry key="txt" value="20" />
+          <entry key="py" value="1412" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="56" />
-          <entry key="PLAIN_TEXT" value="31" />
-          <entry key="Python" value="475" />
+          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="Python" value="1412" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="e#150#163#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4080">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.29310346">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="223">
+                  <caret line="52" selection-start-line="52" selection-end-line="52" />
+                  <folding>
+                    <element signature="e#150#163#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/get_data_from_excel.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-504">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                  <folding>
+                    <element signature="e#165#219#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/excel_col_config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="631">
+                  <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="21" />
+                  <folding>
+                    <marker date="1588953725893" expanded="true" signature="842:847" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/write_data_to_excel.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#166#221#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data/write_data_to_excel.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2880">
+                  <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+                  <folding>
+                    <element signature="e#166#221#0" expanded="true" />
+                    <marker date="1588953725929" expanded="true" signature="563:1319" ph="..." />
+                    <marker date="1588953725929" expanded="true" signature="3511:4178" ph="..." />
+                    <marker date="1588953725929" expanded="true" signature="4247:4469" ph="..." />
+                    <marker date="1588953725929" expanded="true" signature="4624:4633" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,16 +170,16 @@
         <option value="$PROJECT_DIR$/utils/process_data.py" />
         <option value="$PROJECT_DIR$/get_excel_data.py" />
         <option value="$PROJECT_DIR$/data/get_excel_data.py" />
-        <option value="$PROJECT_DIR$/data/write_data_to_excel.py" />
-        <option value="$PROJECT_DIR$/data/get_data_from_excel.py" />
         <option value="$PROJECT_DIR$/config/global_var_config.json" />
         <option value="$PROJECT_DIR$/utils/operation_json.py" />
         <option value="$PROJECT_DIR$/utils/operation_file.py" />
-        <option value="$PROJECT_DIR$/config/excel_col_config.py" />
         <option value="$PROJECT_DIR$/config/Readme.txt" />
         <option value="$PROJECT_DIR$/config/demo22.txt" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/data/auto_generate_case_logic.py" />
+        <option value="$PROJECT_DIR$/data/get_data_from_excel.py" />
+        <option value="$PROJECT_DIR$/config/excel_col_config.py" />
+        <option value="$PROJECT_DIR$/data/write_data_to_excel.py" />
       </list>
     </option>
   </component>
@@ -133,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,13 +222,17 @@
             <path>
               <item name="AutoWriteCase" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoWriteCase" type="462c0819:PsiDirectoryNode" />
+              <item name="excel_file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoWriteCase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoWriteCase" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,13 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588722250626</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改数据获取逻辑">
+      <created>1588894980051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588894980051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.041577823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,7 +363,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main.py文件修改" />
     <MESSAGE value="autu.py文件修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="autu.py文件修改" />
+    <MESSAGE value="修改数据获取逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改数据获取逻辑" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/utils/process_data.py">
@@ -309,26 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/get_data_from_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#161#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/write_data_to_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#166#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/global_var_config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -337,30 +399,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/operation_file.py" />
-    <entry file="file://$PROJECT_DIR$/config/excel_col_config.py">
+    <entry file="file://$PROJECT_DIR$/config/Readme.txt" />
+    <entry file="file://$PROJECT_DIR$/config/demo22.txt" />
+    <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/demo22.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="583" column="60" selection-start-line="583" selection-start-column="60" selection-end-line="583" selection-end-column="60" />
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="223">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#150#163#0" expanded="true" />
@@ -368,10 +418,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
+    <entry file="file://$PROJECT_DIR$/data/get_data_from_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4080">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-504">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#165#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/excel_col_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <marker date="1588953725893" expanded="true" signature="842:847" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/write_data_to_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="e#166#221#0" expanded="true" />
+            <marker date="1588953725929" expanded="true" signature="563:1319" ph="..." />
+            <marker date="1588953725929" expanded="true" signature="3511:4178" ph="..." />
+            <marker date="1588953725929" expanded="true" signature="4247:4469" ph="..." />
+            <marker date="1588953725929" expanded="true" signature="4624:4633" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

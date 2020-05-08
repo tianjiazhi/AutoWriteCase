@@ -6,6 +6,8 @@
 # time: 2020/5/5 8:37
 # tool: PyCharm 
 # desc:
+
+
 from config.excel_col_config import ReadExcelColConfig
 from utils.operation_excel import ReaderExcel
 
@@ -134,7 +136,6 @@ class GetData:
         else:
             flag = False
         return flag
-
 
 
     def get_format_check(self, x:int):
