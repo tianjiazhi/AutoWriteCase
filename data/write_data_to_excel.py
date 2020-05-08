@@ -128,6 +128,7 @@ class WriteCaseToExcel:
         self.__write_feature_name(feature_name)
         self.__write_feature_number(feature_number)
         self.__write_is_feature(is_feature)
+
         self.__switch_to_next_line()
 
 

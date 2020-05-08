@@ -22,6 +22,36 @@ class GetData:
         return self._operation_excel.get_row_num()
 
     #################################################################
+    def get_depth(self, x:int):
+        """获取接口名称"""
+        y = self._get_column_num.Depth
+        depth = self._operation_excel.get_cell_value(x, y)
+        return depth
+
+
+    def get_feature_name(self, x:int):
+        """获取接口名称"""
+        y = self._get_column_num.Feature_Name
+        feature_name = self._operation_excel.get_cell_value(x, y)
+        return feature_name
+
+    def get_feature_number(self, x:int):
+        """获取接口名称"""
+        y = self._get_column_num.Feature_Number
+        feature_number = self._operation_excel.get_cell_value(x, y)
+        return feature_number
+
+    def get_is_feature(self, x:int):
+        """获取接口名称"""
+        y = self._get_column_num.isFeature
+        is_feature = self._operation_excel.get_cell_value(x, y)
+        if is_feature and is_feature.upper() == "YES":
+            flag = True
+        else:
+            flag = False
+        return flag
+
+    #####################################################################
 
     def get_interface_name(self, x:int):
         """获取接口名称"""
@@ -44,18 +74,19 @@ class GetData:
         return method
 
 
-    def get_valid_body(self, x:int):
-        """获取合法的请求体"""
-        y = self._get_column_num.ValidBody
-        valid_body = self._operation_excel.get_cell_value(x, y)
-        return valid_body
-
-
     def get_output_style(self, x:int):
         """获取请求体的格式"""
         y = self._get_column_num.OutputStyle
         output_style = self._operation_excel.get_cell_value(x, y)
         return output_style
+
+    #################################################################
+
+    def get_valid_body(self, x:int):
+        """获取合法的请求体"""
+        y = self._get_column_num.ValidBody
+        valid_body = self._operation_excel.get_cell_value(x, y)
+        return valid_body
 
 
     def get_is_run(self, x:int):
@@ -67,9 +98,6 @@ class GetData:
         else:
             flag = False
         return flag
-
-
-
 
 
     #################################################################
@@ -87,12 +115,12 @@ class GetData:
         param_type = self._operation_excel.get_cell_value(x, y)
         return param_type
 
+
     def get_json_path_expr(self, x:int):
         """获取jsonpath_表达式"""
         y = self._get_column_num.JsonPathExpression
         json_path_expression = self._operation_excel.get_cell_value(x, y)
         return json_path_expression
-
 
 
     def get_min_bound(self, x:int):
