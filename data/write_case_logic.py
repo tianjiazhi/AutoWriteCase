@@ -102,8 +102,8 @@ class WriteCaseLogic:
 #######################################################################################################################
     def process_string(self):
         # 获取某个字段的初始值
-        get_value = get_value_to_json_path(self.valid_body, self.json_path_expr)
-        print(get_value)
+        initial_value = get_value_to_json_path(self.valid_body, self.json_path_expr)
+        print(initial_value)
 
         if self.is_required is True:
             # '验证必填参数的非空校验--非法' -->测试通过
@@ -146,38 +146,38 @@ class WriteCaseLogic:
 
             if self.min_bound in ['0','1']:
                 # '验证最大边界+1--非法'  -->测试通过
-                self.__test_case_str_max_bound_add1()
+                self.__test_case_str_max_bound_add1(initial_value)
             else:
                 # '验证最大边界+1--非法'  -->测试通过
-                self.__test_case_str_max_bound_add1()
+                self.__test_case_str_max_bound_add1(initial_value)
                 # '验证最小边界-1--非法'  -->测试通过
-                self.__test_case_str_min_bound_sub1()
+                self.__test_case_str_min_bound_sub1(initial_value)
 
 
             if self.min_bound != self.max_bound and self.min_bound == "0":
                 # '验证最大边界--合法' --> 测试通过
-                self.__test_case_str_max_bound()
+                self.__test_case_str_max_bound(initial_value)
             elif self.min_bound != self.max_bound and self.min_bound != "0":
                 # '验证最小边界--合法' --> 测试通过
-                self.__test_case_str_min_bound()
+                self.__test_case_str_min_bound(initial_value)
                 # '验证最大边界--合法' --> 测试通过
-                self.__test_case_str_max_bound()
+                self.__test_case_str_max_bound(initial_value)
             elif self.min_bound == self.max_bound and self.min_bound != "0":
                 # '最大最小边界相等--合法'--># 测试通过
-                self.__test_case_str_bound_value()
+                self.__test_case_str_bound_value(initial_value)
 
         else:
             if self.is_array == True:
                 for index, value in enumerate(self.option_value.split(';')):
                     # '验证传入已定义的值--合法' --> 测试通过
-                    self.__test_case_is_array_exist(index, value)
+                    self.__test_case_is_array_exist(index, value,initial_value)
                 # '验证传入已定义的值--非法' --> 测试通过
-                self.__test_case_is_array_inexist()
+                self.__test_case_is_array_inexist(initial_value)
             else:
                 # '验证传入已定义的值--合法' --> 测试通过
-                self.__test_case_not_array_true()
+                self.__test_case_not_array_true(initial_value)
                 # '验证传入已定义的值--非法' --> 测试通过
-                self.__test_case_not_array_false()
+                self.__test_case_not_array_false(initial_value)
 
 
 ########################################################################################################################
@@ -187,26 +187,24 @@ class WriteCaseLogic:
         level = case_level(1)  # 用例级别
         tag = case_tag(1)  # 用例标签
         excepted = test_excepted()  # 期望结果
-
-        update_value = "我是必填参数的非空校验"
+        update_value = ""
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
     def __test_case_not_required_check(self):
         case_name = '验证选填参数[%s]的值为空' %self.param_name # 测试通过
-
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'not-required-null'
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
 
-        update_value = "我是选填参数的非空校验"
+        update_value = ""
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
 ########################################################################################################################
 
-    def __test_case_str_min_bound_sub1(self):
+    def __test_case_str_min_bound_sub1(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最小边界-1)' % (self.param_name, int(self.min_bound) - 1)  # 测试通过
         case_id = get_case_id(self.method, self.uri,self.param_name) + 'str-min-bound-sub1'
         level = case_level(1)         # 用例级别
@@ -217,7 +215,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name,case_id,level,excepted,tag,update_value)
 
 
-    def __test_case_str_max_bound_add1(self):
+    def __test_case_str_max_bound_add1(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最大边界+1)' % (self.param_name, int(self.max_bound) + 1)  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-max-bound-add1'
         level = case_level(2)  # 用例级别
@@ -228,7 +226,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_str_bound_value(self):
+    def __test_case_str_bound_value(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最大最小边界相等)' % (self.param_name, int(self.max_bound))  # 测试通过
 
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-bound-value'
@@ -240,7 +238,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_str_min_bound(self):
+    def __test_case_str_min_bound(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最小边界)' % (self.param_name, int(self.min_bound))  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-min-bound'
         level = case_level(0)  # 用例级别
@@ -251,7 +249,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_str_max_bound(self):
+    def __test_case_str_max_bound(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最大边界)' % (self.param_name, int(self.max_bound))  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-max-bound'
         level = case_level(0)  # 用例级别
@@ -264,7 +262,7 @@ class WriteCaseLogic:
 
 ########################################################################################################################
 
-    def __test_case_not_array_true(self):
+    def __test_case_not_array_true(self,initial_value):
         case_name = '验证[%s]参数值是[%s]' % (self.param_name, self.option_value)  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'not-array-true'
         level = case_level(0)  # 用例级别
@@ -275,7 +273,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_not_array_false(self):
+    def __test_case_not_array_false(self,initial_value):
         case_name = '验证[%s]参数值不是[%s]' % (self.param_name, self.option_value)  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'not-array-false'
         level = case_level(1)  # 用例级别
@@ -286,7 +284,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_is_array_exist(self,index,value):
+    def __test_case_is_array_exist(self,index,value,initial_value):
         case_name = '验证[%s]参数取值为[%s]' % (self.param_name, value)
 
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'is-array-exist-%s'%str(index)
@@ -298,7 +296,7 @@ class WriteCaseLogic:
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_is_array_inexist(self):
+    def __test_case_is_array_inexist(self,initial_value):
         case_name = '验证[%s]参数值不在可选项数组[%s]中' % (self.param_name, self.option_value)
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'is-array-inexist'
         level = case_level(1)  # 用例级别
