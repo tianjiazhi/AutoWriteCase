@@ -31,10 +31,10 @@ class ReaderJson:
             self.file_path = file_path
         else:
             self.file_path = "../config/global_var_config.json"
-        self.data = self.__read_data()
+        self.data = self.read_data()
 
 
-    def __read_data(self):
+    def read_data(self):
         with open(self.file_path,encoding='utf-8') as f:
             data = json.load(f)
             return data
