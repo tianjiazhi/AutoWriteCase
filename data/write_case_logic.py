@@ -10,7 +10,6 @@
 from utils.operation_json import ReaderJson
 from data.case_document_defind import *
 
-
 class WriteCaseLogic:
 
     def __init__(self,com_dict:dict,param_dict:dict,write_to_cell):
@@ -102,6 +101,9 @@ class WriteCaseLogic:
 
 #######################################################################################################################
     def process_string(self):
+        # 获取某个字段的初始值
+        get_value = get_value_to_json_path(self.valid_body, self.json_path_expr)
+        print(get_value)
 
         if self.is_required is True:
             # '验证必填参数的非空校验--非法' -->测试通过
@@ -248,6 +250,7 @@ class WriteCaseLogic:
         update_value = "我是最小边界值"
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
+
     def __test_case_str_max_bound(self):
         case_name = '验证[%s]参数的长度为[%d]个字符(最大边界)' % (self.param_name, int(self.max_bound))  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-max-bound'
@@ -304,4 +307,3 @@ class WriteCaseLogic:
 
         update_value = "参数等于未被定义的值"
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
-

@@ -46,16 +46,12 @@ def get_case_id(method, uri,param_name):
 
 def get_test_data(convert_dict:dict,json_path_expr:str,update_value):
 
-    get_value = get_value_to_json_path(convert_dict, json_path_expr)
-    print(get_value)
-
     convert_json_path = convert_json_path_expr(json_path_expr)
-    print("转换后的json表达式：%s"%convert_json_path)
+    # print("转换后的json表达式：%s"%convert_json_path)
 
     update_data = update_json_data(convert_dict, convert_json_path, update_value)
-    print("更新后的数据是:%s"%update_data)
+    # print("更新后的数据是:%s"%update_data)
 
     test_data = dict_convert_json(update_data)
 
     return test_data
-
