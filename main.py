@@ -33,7 +33,7 @@ class RunMain:
                                        'Testcase_Name','Testcase_Number','Testcase_Stage',
                                        'Testcase_Level','Testcase_PrepareCondition',
                                        'Testcase_TestSteps','Testcase_Excepted','Testcase_Remark',
-                                       'Testcase_Tags','Testcase_Activity','Testcase_TestType ')
+                                       'Testcase_Tags','Testcase_Activity','Testcase_TestType')
 
         for row_num in range(2, sheet_lines + 1):
 
