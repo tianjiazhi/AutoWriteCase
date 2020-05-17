@@ -144,6 +144,20 @@ class WriteCaseLogic:
                 print(error)
                 return
 
+            length = len(initial_value)
+            if int(self.min_bound) > length:
+                error = "%s接口的%s字段的合法值是%s个字符不能小于最小边界值%s,请重新填写后重试！" \
+                        % (self.interface_name, self.param_name, length, self.min_bound)
+                print(error)
+                return
+
+
+            if int(self.max_bound) < length:
+                error = "%s接口的%s字段的合法值是%s个字符不能大于最大边界值%s,请重新填写后重试！" \
+                        % (self.interface_name, self.param_name, length, self.max_bound)
+                print(error)
+                return
+
             if self.min_bound in ['0','1']:
                 # '验证最大边界+1--非法'  -->测试通过
                 self.__test_case_str_max_bound_add1(initial_value)
@@ -167,9 +181,11 @@ class WriteCaseLogic:
                 self.__test_case_str_bound_value(initial_value)
 
         else:
+
             if self.is_array == True:
                 for index, value in enumerate(self.option_value.split(',')):
                     # '验证传入已定义的值--合法' --> 测试通过
+                    print(index,value)
                     self.__test_case_is_array_exist(index, value)
                 # '验证传入未定义的值--非法' --> 测试通过
                 self.__test_case_is_array_inexist(initial_value)
@@ -209,7 +225,7 @@ class WriteCaseLogic:
         level = case_level(1)         # 用例级别
         tag = case_tag(1)             # 用例标签
         excepted = test_excepted()    # 期望结果
-        update_value = get_min_bound_sub1_value(initial_value,self.min_bound,self.interface_name,self.param_name)
+        update_value = initial_value[0:int(self.min_bound) - 1]
         self.public_write_case_filed_value(case_name,case_id,level,excepted,tag,update_value)
 
 
@@ -219,7 +235,8 @@ class WriteCaseLogic:
         level = case_level(2)  # 用例级别
         tag = case_tag(1)  # 用例标签
         excepted = test_excepted()  # 期望结果
-        update_value = get_max_bound_add1_value(initial_value, self.max_bound, self.interface_name, self.param_name)
+        div_mod = list(divmod(int(self.max_bound), len(initial_value)))  # 商div_mod[0]和余数div_mod[1]
+        update_value = initial_value * (div_mod[0] - 1) + initial_value[0:div_mod[1] + 1] + initial_value
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -229,7 +246,9 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-        update_value = get_max_bound_value(initial_value, self.max_bound, self.interface_name, self.param_name)
+        div_mod = list(divmod(int(self.max_bound), len(initial_value)))  # 商div_mod[0]和余数div_mod[1]
+        update_value = initial_value * (div_mod[0] - 1) + initial_value[0:div_mod[1]] + initial_value
+
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -239,7 +258,7 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-        update_value = get_min_bound_value(initial_value, self.min_bound, self.interface_name, self.param_name)
+        update_value = initial_value[0:int(self.min_bound)]
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -249,7 +268,8 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-        update_value = get_max_bound_value(initial_value, self.max_bound, self.interface_name, self.param_name)
+        div_mod = list(divmod(int(self.max_bound), len(initial_value)))  # 商div_mod[0]和余数div_mod[1]
+        update_value = initial_value * (div_mod[0] - 1) + initial_value[0:div_mod[1]] + initial_value
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 

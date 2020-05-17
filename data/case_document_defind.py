@@ -57,54 +57,6 @@ def get_test_data(convert_dict:dict,json_path_expr:str,update_value):
     return test_data
 
 
-######################################边界值##############################################
-
-def get_min_bound_sub1_value(initial_value:str,min_bound:str,interface_name="", param_name=""):
-    length = len(initial_value)
-    if int(min_bound) > length:
-        error = "%s接口的%s字段的合法值是%s个字符不能小于最小边界值%s,请重新填写后重试！"\
-                % (interface_name, param_name, length, min_bound)
-        print(error)
-        return
-    update_value = initial_value[0:int(min_bound) - 1]
-    return update_value
-
-
-def get_min_bound_value(initial_value: str, min_bound: str, interface_name="", param_name=""):
-    length = len(initial_value)
-    if int(min_bound) > length:
-        error = "%s接口的%s字段的合法值是%s个字符不能小于最小边界值%s,请重新填写后重试！" \
-                % (interface_name, param_name, length, min_bound)
-        print(error)
-        return
-    update_value = initial_value[0:int(min_bound)]
-    return update_value
-
-
-def get_max_bound_value(initial_value: str, max_bound: str, interface_name="", param_name=""):
-    length = len(initial_value)
-    max = int(max_bound)
-    if max < length:
-        error = "%s接口的%s字段的合法值是%s个字符不能大于最大边界值%s,请重新填写后重试！" \
-                % (interface_name, param_name, length, max_bound)
-        print(error)
-        return
-    div_mod = list(divmod(max, length))
-    update_value = initial_value * (div_mod[0]-1) + initial_value[0:div_mod[1]] + initial_value
-    return update_value
-
-
-def get_max_bound_add1_value(initial_value: str, max_bound: str, interface_name="", param_name=""):
-    length = len(initial_value)
-    max = int(max_bound)
-    if max < length:
-        error = "%s接口的%s字段的合法值是%s个字符不能大于最大边界值%s,请重新填写后重试！" \
-                % (interface_name, param_name, length, max_bound)
-        print(error)
-        return
-    div_mod = list(divmod(max, length)) # 商div_mod[0]和余数div_mod[1]
-    update_value = initial_value * (div_mod[0]-1) + initial_value[0:div_mod[1] + 1] + initial_value
-    return update_value
 
 
     # upper_index = []
@@ -114,12 +66,7 @@ def get_max_bound_add1_value(initial_value: str, max_bound: str, interface_name=
     #         upper_index.append(index)
     #     elif value.islower():
     #         lower_index.append(index)
-    #
-    #
     # return upper_index,lower_index
 
 if __name__ == "__main__":
-    print(get_min_bound_sub1_value("我是合法的字符串aASsc","3","学生信息","name"))
-    print(get_min_bound_value("我是合法的字符串aASsc","3","学生信息","name"))
-    print(get_max_bound_value("我是合作坊","13","学生信息","name"))
-    print(get_max_bound_add1_value("我是合作坊","13","学生信息","name"))
+    pass
