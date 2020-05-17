@@ -168,15 +168,15 @@ class WriteCaseLogic:
 
         else:
             if self.is_array == True:
-                for index, value in enumerate(self.option_value.split(';')):
+                for index, value in enumerate(self.option_value.split(',')):
                     # '验证传入已定义的值--合法' --> 测试通过
-                    self.__test_case_is_array_exist(index, value,initial_value)
-                # '验证传入已定义的值--非法' --> 测试通过
+                    self.__test_case_is_array_exist(index, value)
+                # '验证传入未定义的值--非法' --> 测试通过
                 self.__test_case_is_array_inexist(initial_value)
             else:
                 # '验证传入已定义的值--合法' --> 测试通过
-                self.__test_case_not_array_true(initial_value)
-                # '验证传入已定义的值--非法' --> 测试通过
+                self.__test_case_not_array_true()
+                # '验证传入未定义的值--非法' --> 测试通过
                 self.__test_case_not_array_false(initial_value)
 
 
@@ -184,8 +184,8 @@ class WriteCaseLogic:
     def __test_case_is_required_check(self):
         case_name = '验证必填参数[%s]的值为空' %self.param_name # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'is-required-null'
-        level = case_level(1)  # 用例级别
-        tag = case_tag(1)  # 用例标签
+        level = case_level(1)       # 用例级别
+        tag = case_tag(1)           # 用例标签
         excepted = test_excepted()  # 期望结果
         update_value = ""
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
@@ -197,21 +197,19 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-
         update_value = ""
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
 ########################################################################################################################
 
-    def __test_case_str_min_bound_sub1(self,initial_value):
+    def __test_case_str_min_bound_sub1(self,initial_value:str):
         case_name = '验证[%s]参数的长度为[%d]个字符(最小边界-1)' % (self.param_name, int(self.min_bound) - 1)  # 测试通过
         case_id = get_case_id(self.method, self.uri,self.param_name) + 'str-min-bound-sub1'
         level = case_level(1)         # 用例级别
         tag = case_tag(1)             # 用例标签
         excepted = test_excepted()    # 期望结果
-
-        update_value = "我是最小边界值-1"
+        update_value = get_min_bound_sub1_value(initial_value,self.min_bound,self.interface_name,self.param_name)
         self.public_write_case_filed_value(case_name,case_id,level,excepted,tag,update_value)
 
 
@@ -221,20 +219,17 @@ class WriteCaseLogic:
         level = case_level(2)  # 用例级别
         tag = case_tag(1)  # 用例标签
         excepted = test_excepted()  # 期望结果
-
-        update_value = "我是最大边界值-1"
+        update_value = get_max_bound_add1_value(initial_value, self.max_bound, self.interface_name, self.param_name)
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
     def __test_case_str_bound_value(self,initial_value):
         case_name = '验证[%s]参数的长度为[%d]个字符(最大最小边界相等)' % (self.param_name, int(self.max_bound))  # 测试通过
-
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'str-bound-value'
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-
-        update_value = "我是边界值"
+        update_value = get_max_bound_value(initial_value, self.max_bound, self.interface_name, self.param_name)
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -244,8 +239,7 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-
-        update_value = "我是最小边界值"
+        update_value = get_min_bound_value(initial_value, self.min_bound, self.interface_name, self.param_name)
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -255,21 +249,19 @@ class WriteCaseLogic:
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-
-        update_value = "我是最大边界值"
+        update_value = get_max_bound_value(initial_value, self.max_bound, self.interface_name, self.param_name)
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
 ########################################################################################################################
 
-    def __test_case_not_array_true(self,initial_value):
+    def __test_case_not_array_true(self):
         case_name = '验证[%s]参数值是[%s]' % (self.param_name, self.option_value)  # 测试通过
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'not-array-true'
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")   # 期望结果
-
-        update_value = "参数等于已定义的值"
+        update_value = self.option_value
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -279,20 +271,17 @@ class WriteCaseLogic:
         level = case_level(1)  # 用例级别
         tag = case_tag(1)      # 用例标签
         excepted = test_excepted()  # 期望结果
-
-        update_value = "参数等于未定义的值"
+        update_value = initial_value[::-1]   # 将字符串倒叙输出
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
-    def __test_case_is_array_exist(self,index,value,initial_value):
+    def __test_case_is_array_exist(self,index,value):
         case_name = '验证[%s]参数取值为[%s]' % (self.param_name, value)
-
         case_id = get_case_id(self.method, self.uri, self.param_name) + 'is-array-exist-%s'%str(index)
         level = case_level(0)  # 用例级别
         tag = case_tag(0)  # 用例标签
         excepted = test_excepted("200")  # 期望结果
-
-        update_value = "参数等于已定义的值"
+        update_value = value
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)
 
 
@@ -302,6 +291,5 @@ class WriteCaseLogic:
         level = case_level(1)  # 用例级别
         tag = case_tag(1)  # 用例标签
         excepted = test_excepted()  # 期望结果
-
-        update_value = "参数等于未被定义的值"
+        update_value = initial_value[::-1]   # 将字符串倒叙输出
         self.public_write_case_filed_value(case_name, case_id, level, excepted, tag, update_value)

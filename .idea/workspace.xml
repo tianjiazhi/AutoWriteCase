@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b8b71860-684d-49ab-84de-29f3a8feea8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/case_document_defind.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_document_defind.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/write_case_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/write_case_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/excel_file/case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excel_file/case.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel_file/interface_analysis_document.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excel_file/interface_analysis_document.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,61 +15,80 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AutoWriteCase$main.coverage" NAME="main Coverage Results" MODIFIED="1589122944055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AutoWriteCase$walk_dir.coverage" NAME="walk_dir Coverage Results" MODIFIED="1589297658931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/AutoWriteCase$case_document_defind.coverage" NAME="case_document_defind Coverage Results" MODIFIED="1589717287164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/AutoWriteCase$main.coverage" NAME="main Coverage Results" MODIFIED="1589718872712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AutoWriteCase$write_case_logic.coverage" NAME="write_case_logic Coverage Results" MODIFIED="1589081991301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="265602522">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="base64" value="10" />
           <entry key="json" value="6" />
-          <entry key="py" value="29" />
+          <entry key="py" value="33" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="6" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="29" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
           <entry key="json" value="56" />
-          <entry key="py" value="5269" />
-          <entry key="txt" value="65" />
+          <entry key="py" value="7017" />
+          <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="56" />
-          <entry key="PLAIN_TEXT" value="76" />
-          <entry key="Python" value="5269" />
+          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="Python" value="7017" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="799">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="e#150#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+              <folding>
+                <marker date="1589717673090" expanded="true" signature="229:305" ph="..." />
+                <marker date="1589717673090" expanded="true" signature="329:334" ph="..." />
+                <marker date="1589717673090" expanded="true" signature="1758:3760" ph="..." />
+                <marker date="1589717673090" expanded="true" signature="1758:3954" ph="..." />
               </folding>
             </state>
           </provider>
@@ -76,38 +97,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/write_case_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="110" column="13" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="170" column="72" selection-start-line="170" selection-start-column="72" selection-end-line="170" selection-end-column="72" />
               <folding>
                 <element signature="e#163#206#0" expanded="true" />
-                <element signature="e#2051#2055#0" />
-                <element signature="e#2094#2098#0" />
-                <element signature="e#2136#2140#0" />
-                <element signature="e#2245#2725#0" />
-                <element signature="e#2771#3630#0" />
-                <element signature="e#7994#8445#0" />
-                <element signature="e#8502#8939#0" />
-                <element signature="e#8993#9427#0" />
-                <element signature="e#9479#9908#0" />
-                <element signature="e#9959#10388#0" />
-                <element signature="e#10563#10983#0" />
-                <element signature="e#11037#11457#0" />
-                <element signature="e#11522#11937#0" />
-                <element signature="e#11992#12408#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <marker date="1589121343956" expanded="true" signature="229:305" ph="..." />
-                <marker date="1589121343956" expanded="true" signature="329:334" ph="..." />
-                <marker date="1589121343956" expanded="true" signature="689:1540" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,6 +141,7 @@
         <option value="$PROJECT_DIR$/excel_file/demo.json" />
         <option value="$PROJECT_DIR$/utils/operation_json.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/utils/walk_dir.py" />
         <option value="$PROJECT_DIR$/data/case_document_defind.py" />
         <option value="$PROJECT_DIR$/data/write_case_logic.py" />
       </list>
@@ -159,7 +153,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="691" />
     <option name="y" value="208" />
     <option name="width" value="705" />
@@ -207,7 +201,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfaceFrame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -234,6 +228,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="case_document_defind" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoWriteCase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/case_document_defind.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutoWriteCase" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -248,6 +264,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="walk_dir" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoWriteCase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/walk_dir.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,10 +319,14 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.write_case_logic" />
+      <item itemvalue="Python.walk_dir" />
+      <item itemvalue="Python.case_document_defind" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.case_document_defind" />
+        <item itemvalue="Python.walk_dir" />
         <item itemvalue="Python.write_case_logic" />
       </list>
     </recent_temporary>
@@ -370,18 +412,26 @@
       <option name="project" value="LOCAL" />
       <updated>1589122413462</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="结构定义完成v1.4">
+      <created>1589123062051</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589123062051</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2660152" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23452769" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,7 +465,8 @@
     <MESSAGE value="结构定义完成v1.1" />
     <MESSAGE value="结构定义完成v1.2" />
     <MESSAGE value="结构定义完成v1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构定义完成v1.3" />
+    <MESSAGE value="结构定义完成v1.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="结构定义完成v1.4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/utils/operation_file.py" />
@@ -456,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="120" column="8" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-          <folding>
-            <element signature="e#160#171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,28 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3168">
           <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="e#166#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <marker date="1589121343956" expanded="true" signature="229:305" ph="..." />
-            <marker date="1589121343956" expanded="true" signature="329:334" ph="..." />
-            <marker date="1589121343956" expanded="true" signature="689:1540" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,36 +531,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/Logs/2020-03-21/logs.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/Logs/2020-03-21/logs.2020-03-21_17.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/Logs/2020-03-21/logs.2020-03-21_10.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/57_18_576686_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/57_42_477885_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/57_55_545924_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/58_06_562923_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/31_42_607279_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/32_19_547113_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/ScreenShot/2020-03-21-08/32_30_542912_Timeout.png.base64" />
+    <entry file="file://$PROJECT_DIR$/utils/walk_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1589297658912" expanded="true" signature="240:487" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/auto_generate_case_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4584">
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/write_case_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="110" column="13" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="170" column="72" selection-start-line="170" selection-start-column="72" selection-end-line="170" selection-end-column="72" />
           <folding>
             <element signature="e#163#206#0" expanded="true" />
-            <element signature="e#2051#2055#0" />
-            <element signature="e#2094#2098#0" />
-            <element signature="e#2136#2140#0" />
-            <element signature="e#2245#2725#0" />
-            <element signature="e#2771#3630#0" />
-            <element signature="e#7994#8445#0" />
-            <element signature="e#8502#8939#0" />
-            <element signature="e#8993#9427#0" />
-            <element signature="e#9479#9908#0" />
-            <element signature="e#9959#10388#0" />
-            <element signature="e#10563#10983#0" />
-            <element signature="e#11037#11457#0" />
-            <element signature="e#11522#11937#0" />
-            <element signature="e#11992#12408#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="799">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="e#150#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <marker date="1589717673090" expanded="true" signature="229:305" ph="..." />
+            <marker date="1589717673090" expanded="true" signature="329:334" ph="..." />
+            <marker date="1589717673090" expanded="true" signature="1758:3760" ph="..." />
+            <marker date="1589717673090" expanded="true" signature="1758:3954" ph="..." />
           </folding>
         </state>
       </provider>
