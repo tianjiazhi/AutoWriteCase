@@ -145,6 +145,7 @@ class WriteCaseLogic:
                 return
 
             length = len(initial_value)
+
             if int(self.min_bound) > length:
                 error = "%s接口的%s字段的合法值是%s个字符不能小于最小边界值%s,请重新填写后重试！" \
                         % (self.interface_name, self.param_name, length, self.min_bound)
@@ -185,7 +186,6 @@ class WriteCaseLogic:
             if self.is_array == True:
                 for index, value in enumerate(self.option_value.split(',')):
                     # '验证传入已定义的值--合法' --> 测试通过
-                    print(index,value)
                     self.__test_case_is_array_exist(index, value)
                 # '验证传入未定义的值--非法' --> 测试通过
                 self.__test_case_is_array_inexist(initial_value)

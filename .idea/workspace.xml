@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b8b71860-684d-49ab-84de-29f3a8feea8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/case_document_defind.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/case_document_defind.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/write_case_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/write_case_logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel_file/case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excel_file/case.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel_file/interface_analysis_document.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/excel_file/interface_analysis_document.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,26 +49,26 @@
         <counts>
           <entry key="dummy" value="11" />
           <entry key="json" value="56" />
-          <entry key="py" value="7086" />
-          <entry key="txt" value="69" />
+          <entry key="py" value="7092" />
+          <entry key="txt" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="56" />
-          <entry key="PLAIN_TEXT" value="80" />
-          <entry key="Python" value="7086" />
+          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="Python" value="7092" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="60" lean-forward="true" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
+            <state relative-caret-position="127">
+              <caret line="56" column="15" lean-forward="true" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
               <folding>
                 <element signature="e#150#163#0" expanded="true" />
               </folding>
@@ -91,21 +88,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="358">
+              <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding>
-                <marker date="1589720509682" expanded="true" signature="229:305" ph="..." />
-                <marker date="1589720509682" expanded="true" signature="329:334" ph="..." />
+                <marker date="1589727341855" expanded="true" signature="229:305" ph="..." />
+                <marker date="1589727341855" expanded="true" signature="329:334" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/write_case_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-883">
-              <caret line="258" column="33" lean-forward="true" selection-start-line="258" selection-start-column="33" selection-end-line="258" selection-end-column="33" />
+            <state relative-caret-position="-667">
+              <caret line="147" column="12" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
               <folding>
                 <element signature="e#163#206#0" expanded="true" />
               </folding>
@@ -447,18 +444,26 @@
       <option name="project" value="LOCAL" />
       <updated>1589720435107</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="结构定义完成v1.8">
+      <created>1589727359141</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589727359141</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37459284" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31053203" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,7 +501,8 @@
     <MESSAGE value="结构定义完成v1.5" />
     <MESSAGE value="结构定义完成v1.6" />
     <MESSAGE value="结构定义完成v1.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构定义完成v1.7" />
+    <MESSAGE value="结构定义完成v1.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="结构定义完成v1.8" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/utils/operation_file.py" />
@@ -585,33 +591,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="56" column="15" lean-forward="true" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
+          <folding>
+            <element signature="e#150#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/case_document_defind.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="358">
+          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
-            <marker date="1589720509682" expanded="true" signature="229:305" ph="..." />
-            <marker date="1589720509682" expanded="true" signature="329:334" ph="..." />
+            <marker date="1589727341855" expanded="true" signature="229:305" ph="..." />
+            <marker date="1589727341855" expanded="true" signature="329:334" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/write_case_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-883">
-          <caret line="258" column="33" lean-forward="true" selection-start-line="258" selection-start-column="33" selection-end-line="258" selection-end-column="33" />
+        <state relative-caret-position="-667">
+          <caret line="147" column="12" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
           <folding>
             <element signature="e#163#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="60" lean-forward="true" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
-          <folding>
-            <element signature="e#150#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
